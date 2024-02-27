@@ -1180,7 +1180,7 @@ private:
 		playerInitRPC.SetSpawnInfoCount = classes ? classes->count() : 0;
 		playerInitRPC.PlayerID = player.getID();
 		IVehiclesComponent* vehicles = components.queryComponent<IVehiclesComponent>();
-		static const StaticArray<uint8_t, 212> emptyModels { 0 };
+		static const StaticArray<uint8_t, 301> emptyModels { 0 };
 		playerInitRPC.VehicleModels = vehicles ? vehicles->models() : emptyModels;
 		playerInitRPC.EnableVehicleFriendlyFire = *EnableVehicleFriendlyFire;
 		PacketHelper::send(playerInitRPC, player);
